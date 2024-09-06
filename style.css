@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom right, #ffffff, #e6e6e6); /* Light gradient background */
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #2c3e50; /* Dark background for header */
+    color: #ecf0f1; /* Light text color */
+    padding: 30px 0;
+    min-height: 100px;
+    border-bottom: 3px solid #3498db; /* Bright border */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.profile-photo {
+    float: left;
+    margin-right: 20px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #ecf0f1; /* White border */
+}
+
+.intro {
+    float: left;
+    margin-top: 30px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #bdc3c7; /* Slightly darker text color */
+}
+
+.linkedin-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #0077B5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.linkedin-link:hover {
+    background-color: #005983; /* Darker shade on hover */
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1.5s ease-in-out forwards;
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: zoomIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.6);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* About Section */
+#about {
+    padding: 20px;
+    background: #ecf0f1; /* Light background for about section */
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#about p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Skills Section */
+#skills {
+    padding: 20px;
+    background: #3498db; /* Bright background for skills section */
+    color: white;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    list-style: none;
+    text-align: center;
+}
+
+.skills-list li {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #2c3e50; /* Dark background for skill items */
+    color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+.skills-list li:hover {
+    background: #1abc9c; /* Color change on hover */
+}
+
+/* Projects Section */
+#projects {
+    padding: 20px;
+    background: #ecf0f1; /* Light background for projects section */
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-item {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Smooth scaling */
+}
+
+.project-item:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.project-item h3 {
+    color: #333;
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    background: #fff;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #3498db; /* Bright button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s; /* Smooth background transition */
+}
+
+form button:hover {
+    background: #2980b9; /* Darker shade on hover */
+}
+
+#formResponse {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-linkedin {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.contact-linkedin a {
+    color: #0077B5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-linkedin a:hover {
+    color: #005983;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50; /* Dark background for footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
